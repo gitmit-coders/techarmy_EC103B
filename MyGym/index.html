@@ -5,53 +5,241 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness and gym website</title>
+    <title>Muscles Factory - Tech Army</title>
+    <link rel="icon" href="images/bodybuilder.png">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 
+    <!-- Bootstrap JavaScript and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-H+K7U5l1P1AaZmeH9zD4mt5fUVf+kgSJf8Pc8m+1jKs="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="index.js"></script>
 </head>
 
 <body>
 
     <header class="header">
-
-        <a href="#" class="logo"> <span>BE</span>FIT </a>
-
-        <div id="menu-btn" class="fas fa-bars"></div>
-
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#about">about</a>
-            <a href="#features">features</a>
-            <a href="#pricing">pricing</a>
-            <a href="#trainers">trainers</a>
-            <a href="#blogs">blogs</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Muscles Factory</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-auto" style="font-size: 18px;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">FEATURES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">PRICING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#trainers">TRAINERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blogs">BLOGS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-
+        
     </header>
+    
 
     <section class="home" id="home">
-
         <div class="swiper home-slider">
-
             <div class="swiper-wrapper">
-
-                <div class="swiper-slide slide" style="background: url(images/home-bg-1.jpg) no-repeat ;">
+                <div class="swiper-slide slide"
+                    style="background: url(images/home-bg-3.jpg) no-repeat ;">
                     <div class="content">
                         <span>be strong, be fit</span>
                         <h3>Make yourself stronger than your excuses.</h3>
                         <a href="#" class="btn">get started</a>
                     </div>
                 </div>
-
             </div>
-
             <div class="swiper-pagination"></div>
-
         </div>
-
     </section>
 
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are committed to helping you achieve your fitness goals. Our experienced trainers and state-of-the-art facilities provide the perfect environment for your fitness journey.</p>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <i class="fas fa-dumbbell"></i>
+                        <h3>Modern Equipment</h3>
+                        <p>We offer a wide range of modern equipment to target every muscle group.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <i class="fas fa-users"></i>
+                        <h3>Expert Trainers</h3>
+                        <p>Our certified trainers are here to guide you through your fitness journey.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Success Stories</h3>
+                        <p>Join our community and become one of our many success stories.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2>Pricing</h2>
+            <p>Choose a membership plan that fits your needs and start your fitness journey today.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <h3>Basic</h3>
+                        <p class="price">$29.99/month</p>
+                        <ul>
+                            <li>Access to gym facilities</li>
+                            <li>Basic equipment</li>
+                            <li>Group classes</li>
+                        </ul>
+                        <a href="#" class="btn">Sign Up</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <h3>Standard</h3>
+                        <p class="price">$49.99/month</p>
+                        <ul>
+                            <li>Access to gym facilities</li>
+                            <li>Full range of equipment</li>
+                            <li>Personal training session</li>
+                            <li>Group classes</li>
+                        </ul>
+                        <a href="#" class="btn">Sign Up</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <h3>Premium</h3>
+                        <p class="price">$79.99/month</p>
+                        <ul>
+                            <li>Access to gym facilities</li>
+                            <li>Full range of equipment</li>
+                            <li>Personal training sessions</li>
+                            <li>Nutritional guidance</li>
+                            <li>Group classes</li>
+                            <li>Exclusive events</li>
+                        </ul>
+                        <a href="#" class="btn">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trainers" id="trainers">
+        <div class="container">
+            <h2>Our Trainers</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="trainer-card">
+                        <img src="/images/trainer1.jpg" height="300px"   alt="Trainer 1">
+                        <h3>John Doe</h3>
+                        <p>Certified Personal Trainer</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="trainer-card">
+                        <img src="/images/trainer2.jpg" height="200px" width="300px" alt="Trainer 2">
+                        <h3>Jane Smith</h3>
+                        <p>Fitness Instructor</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="trainer-card">
+                        <img src="/images/trainer3.jpg" height="200px" width="300px" alt="Trainer 3">
+                        <h3>Michael Johnson</h3>
+                        <p>Yoga Instructor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blogs" id="blogs">
+        <div class="container">
+            <h2>Latest Blogs</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <img src="/images/blog1.jpg"  height="200px" width="300px" alt="Blog 1">
+                        <h3>5 Tips for Building Muscle</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <img src="/images/blog2.jpg" height="200px" width="300px" alt="Blog 2">
+                        <h3>Healthy Eating Habits</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <img src="/images/blog3.jpg"   height="200px" width="300px"alt="Blog 3">
+                        <h3>Benefits of Cardio Workouts</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 
